@@ -9,6 +9,9 @@ import StartPageView from "./views/StartPageView.vue";
 import VTableView from "./views/VTableView.vue";
 import Vue3TableLiteView from "./views/Vue3TableLiteView.vue";
 import VueMasterySocksView from "./views/VueMasterySocksView.vue";
+import VueMasteryRealWorldVue3 from "./views/VueMasteryRealWorldVue3.vue";
+import About from "./VueMastery_RealWorldVue3/components/AboutComp.vue";
+import Event from "./VueMastery_RealWorldVue3/components/EventList.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -44,6 +47,11 @@ const routes: Array<RouteRecordRaw> = [
     component: VueMasterySocksView,
   },
   {
+    path: "/realworldvue3",
+    name: "RealWorld",
+    component: VueMasteryRealWorldVue3,
+  },
+  {
     path: "/grid",
     name: "Grid",
     component: GridView,
@@ -52,6 +60,16 @@ const routes: Array<RouteRecordRaw> = [
     path: "/about",
     name: "About",
     component: AboutView,
+  },
+  {
+    path: "/realworldvue3/about",
+    name: "About",
+    component: About,
+  },
+  {
+    path: "/realworldvue3/event",
+    name: "Event",
+    component: Event,
   },
 ];
 
