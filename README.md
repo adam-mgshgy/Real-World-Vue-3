@@ -1,4 +1,4 @@
-#Magashegyi Ádám, Rozs Norbert
+# Magashegyi Ádám, Rozs Norbert
 
 # Vue3 + TypeScript + Vite + Vuetify3 + Vuex4 + Axios + i18n + Vitest + ESLint + Prettier
 
