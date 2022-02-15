@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      <h1>Vue Mastery - Real World Vue 3 script setup</h1>
       <router-link :to="{ name: 'EventList' }">Events</router-link> |
       <router-link :to="{ name: 'About' }">About</router-link>
     </div>

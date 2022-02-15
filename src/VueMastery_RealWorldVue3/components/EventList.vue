@@ -1,35 +1,26 @@
+<script setup lang="ts">
+  import IEvent from "../types/IEvent";
+  import EventCard from "./EventCard.vue";
+  import EventService from "../services/EventService";
+  import { ref } from "vue";
+
+  const events = ref<Array<IEvent>>();
+
+  EventService.getEvents()
+    .then((data) => {
+      events.value = data.data;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+</script>
+
 <template>
   <h1>Events for Good</h1>
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
-
-<script>
-  import EventCard from "./components/EventCard.vue";
-  import EventService from "./services/EventService.ts";
-
-  export default {
-    name: "EventList",
-    components: {
-      EventCard,
-    },
-    data() {
-      return {
-        events: null,
-      };
-    },
-    created() {
-      EventService.getEvents()
-        .then((response) => {
-          this.events = response.data;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
-  };
-</script>
 
 <style scoped>
   .events {
