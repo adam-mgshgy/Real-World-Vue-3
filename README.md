@@ -1,3 +1,5 @@
+#Magashegyi Ádám, Rozs Norbert
+
 # Vue3 + TypeScript + Vite + Vuetify3 + Vuex4 + Axios + i18n + Vitest + ESLint + Prettier
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite.
@@ -19,7 +21,6 @@ https://jedlik-vite-ts-template.netlify.app
 
 - Vuex:<br>
   https://github.com/infantiablue/vhnews
-
 
 ## Recommended Node.js and npm versions
 
@@ -56,16 +57,21 @@ https://linmasahiro.github.io/vue3-table-lite/
 [Vuetif 3 Alpha](https://next.vuetifyjs.com/en/getting-started/installation) is arguably the best component library for Vue 3 and is currently in alpha stage but will soon be ready for production. Lots of premade components will make your job as application developer easier and more fun.
 
 ## Add translations to locales files
+
 Translations are ready to go with [vue-i18](https://vue-i18n.intlify.dev/)
 Add your files to `/locales` and are you are set.
 
 ## Vitest
+
 [Vitest](https://vitest.dev) A blazing fast unit-test framework for Vue3 powered by Vite.
+
 ## ESLint
+
 [Eslint](https://eslint.org/) Find and fix problems in your JavaScript code<br>
 Change your config at `.eslintrc.js`
 
 ## Prettier
+
 [Prettier](https://prettier.io/) is an opinionated code formatter<br>
 Change config at `.prettierrc.js`
 
